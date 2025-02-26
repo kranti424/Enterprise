@@ -1,0 +1,10 @@
+[
+    {
+      "messages": [
+        {"role": "system", "content": "You are a helpful AI assistant for payroll management."},
+        {"role": "user", "content": "How do I calculate tax deductions?"},
+        {"role": "assistant", "content": "Tax deductions depend on income, exemptions, and local laws. Would you like a breakdown?"}
+      ]
+    }
+  ]
+  

@@ -1,0 +1,37 @@
+2025-02-26 02:47:23 | INFO | model_worker | args: Namespace(host='localhost', port=21002, worker_address='http://localhost:21002', controller_address='http://localhost:21001', model_path='D:\\enterprise\\Enterprise\\backend\\fine_tuned_mistral', revision='main', device='cuda', gpus=None, num_gpus=1, max_gpu_memory=None, dtype=None, load_8bit=False, cpu_offloading=False, gptq_ckpt=None, gptq_wbits=16, gptq_groupsize=-1, gptq_act_order=False, awq_ckpt=None, awq_wbits=16, awq_groupsize=-1, enable_exllama=False, exllama_max_seq_len=4096, exllama_gpu_split=None, exllama_cache_8bit=False, enable_xft=False, xft_max_seq_len=4096, xft_dtype=None, model_names=None, conv_template=None, embed_in_truncate=False, limit_worker_concurrency=5, stream_interval=2, no_register=False, seed=None, debug=False, ssl=False)
+2025-02-26 02:47:23 | INFO | model_worker | Loading the model ['D:\\enterprise\\Enterprise\\backend\\fine_tuned_mistral'] on worker ab010cc8 ...
+2025-02-26 02:47:23 | ERROR | stderr | Traceback (most recent call last):
+2025-02-26 02:47:23 | ERROR | stderr |   File "C:\Users\KRANTI\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\utils\hub.py", line 342, in cached_file
+2025-02-26 02:47:23 | ERROR | stderr |     resolved_file = hf_hub_download(
+2025-02-26 02:47:23 | ERROR | stderr |   File "C:\Users\KRANTI\AppData\Local\Programs\Python\Python310\lib\site-packages\huggingface_hub\utils\_validators.py", line 106, in _inner_fn
+2025-02-26 02:47:23 | ERROR | stderr |     validate_repo_id(arg_value)
+2025-02-26 02:47:23 | ERROR | stderr |   File "C:\Users\KRANTI\AppData\Local\Programs\Python\Python310\lib\site-packages\huggingface_hub\utils\_validators.py", line 160, in validate_repo_id
+2025-02-26 02:47:23 | ERROR | stderr |     raise HFValidationError(
+2025-02-26 02:47:23 | ERROR | stderr | huggingface_hub.errors.HFValidationError: Repo id must use alphanumeric chars or '-', '_', '.', '--' and '..' are forbidden, '-' and '.' cannot start or end the name, max length is 96: 'D:\enterprise\Enterprise\backend\fine_tuned_mistral'.
+2025-02-26 02:47:23 | ERROR | stderr | 
+2025-02-26 02:47:23 | ERROR | stderr | The above exception was the direct cause of the following exception:
+2025-02-26 02:47:23 | ERROR | stderr | 
+2025-02-26 02:47:23 | ERROR | stderr | Traceback (most recent call last):
+2025-02-26 02:47:23 | ERROR | stderr |   File "C:\Users\KRANTI\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 196, in _run_module_as_main
+2025-02-26 02:47:23 | ERROR | stderr |     return _run_code(code, main_globals, None,
+2025-02-26 02:47:23 | ERROR | stderr |   File "C:\Users\KRANTI\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 86, in _run_code
+2025-02-26 02:47:23 | ERROR | stderr |     exec(code, run_globals)
+2025-02-26 02:47:23 | ERROR | stderr |   File "D:\enterprise\Enterprise\backend\FastChat\fastchat\serve\model_worker.py", line 414, in <module>
+2025-02-26 02:47:23 | ERROR | stderr |     args, worker = create_model_worker()
+2025-02-26 02:47:23 | ERROR | stderr |   File "D:\enterprise\Enterprise\backend\FastChat\fastchat\serve\model_worker.py", line 385, in create_model_worker
+2025-02-26 02:47:23 | ERROR | stderr |     worker = ModelWorker(
+2025-02-26 02:47:23 | ERROR | stderr |   File "D:\enterprise\Enterprise\backend\FastChat\fastchat\serve\model_worker.py", line 77, in __init__
+2025-02-26 02:47:23 | ERROR | stderr |     self.model, self.tokenizer = load_model(
+2025-02-26 02:47:23 | ERROR | stderr |   File "D:\enterprise\Enterprise\backend\FastChat\fastchat\model\model_adapter.py", line 373, in load_model
+2025-02-26 02:47:23 | ERROR | stderr |     model, tokenizer = adapter.load_model(model_path, kwargs)
+2025-02-26 02:47:23 | ERROR | stderr |   File "D:\enterprise\Enterprise\backend\FastChat\fastchat\model\model_adapter.py", line 1554, in load_model
+2025-02-26 02:47:23 | ERROR | stderr |     model, tokenizer = super().load_model(model_path, from_pretrained_kwargs)
+2025-02-26 02:47:23 | ERROR | stderr |   File "D:\enterprise\Enterprise\backend\FastChat\fastchat\model\model_adapter.py", line 108, in load_model
+2025-02-26 02:47:23 | ERROR | stderr |     tokenizer = AutoTokenizer.from_pretrained(
+2025-02-26 02:47:23 | ERROR | stderr |   File "C:\Users\KRANTI\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\models\auto\tokenization_auto.py", line 881, in from_pretrained
+2025-02-26 02:47:23 | ERROR | stderr |     tokenizer_config = get_tokenizer_config(pretrained_model_name_or_path, **kwargs)
+2025-02-26 02:47:23 | ERROR | stderr |   File "C:\Users\KRANTI\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\models\auto\tokenization_auto.py", line 713, in get_tokenizer_config
+2025-02-26 02:47:23 | ERROR | stderr |     resolved_config_file = cached_file(
+2025-02-26 02:47:23 | ERROR | stderr |   File "C:\Users\KRANTI\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\utils\hub.py", line 408, in cached_file
+2025-02-26 02:47:23 | ERROR | stderr |     raise EnvironmentError(
+2025-02-26 02:47:23 | ERROR | stderr | OSError: Incorrect path_or_model_id: 'D:\enterprise\Enterprise\backend\fine_tuned_mistral'. Please provide either the path to a local folder or the repo_id of a model on the Hub.
