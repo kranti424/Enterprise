@@ -1,0 +1,51 @@
+.email-container {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .email-title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .email-card {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .ticket-item {
+    background: rgba(255, 255, 255, 0.7);
+    margin: 5px 0;
+    border-radius: 8px;
+    padding: 10px;
+    transition: all 0.3s;
+  }
+  
+  .ticket-item:hover {
+    background: rgba(255, 255, 255, 1);
+  }
+  
+  .status {
+    font-weight: bold;
+    padding: 3px 6px;
+    border-radius: 5px;
+  }
+  
+  .status.open {
+    color: white;
+    background: green;
+  }
+  
+  .status.closed {
+    color: white;
+    background: red;
+  }
+  

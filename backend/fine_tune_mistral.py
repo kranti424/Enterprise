@@ -31,7 +31,6 @@ training_args = TrainingArguments(
     save_strategy="epoch",
     logging_dir="./logs"
 )
-
 # Trainer
 trainer = Trainer(
     model=model,

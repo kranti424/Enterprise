@@ -1,82 +1,96 @@
-BizyEasy
-BizyEasy is a comprehensive solution that automates customer service operations, including email processing, support ticket generation, and chatbot integration. The goal of this project is to make business processes easier by handling repetitive tasks efficiently, allowing businesses to focus on more important work.
+<h1 align="center">BizyEasy - Automated Business Solution</h1>
 
-Features
-Email Automation: Automatically receive and respond to customer emails.
-Ticket Management: Create unique support tickets for each query and track their status.
-AI Chatbot: Handle common customer queries using a local AI chatbot.
-Data Storage: Store ticket data and customer information securely in MongoDB.
-Easy Integration: Simple integration with Gmail for email handling using OAuth 2.0.
-Installation Guide
-1. Prerequisites
-Before installing, make sure you have the following installed on your machine:
+<p align="center"><em>A seamless solution to automate customer service operations.</em></p>
 
-Python 3.7+
-MongoDB (local or cloud)
-Google OAuth 2.0 credentials (for email handling)
-You can download the necessary dependencies using pip.
+---
 
-2. Clone the Repository
-Clone the project repository to your local machine.
+## 🚀 Overview
 
-bash
-Copy
-Edit
+BizyEasy is a comprehensive platform designed to streamline your manual data entry operations with customer service processes. It automates data entry, data processing, email handling, generates support tickets, and integrates an AI-powered chatbot to enhance customer interactions—allowing your business to focus on what truly matters.
+
+---
+
+## 🌟 Features
+
+✔️ **Email Automation** – Retrieves and intelligently responds to customer emails.  
+✔️ **Support Ticket Management** – Generates unique support tickets for tracking and resolution.  
+✔️ **AI Chatbot Integration** – Provides instant answers to common customer queries.  
+✔️ **Secure Data Storage** – Stores customer and ticket data securely in MongoDB.  
+✔️ **Seamless Gmail Integration** – Automates email processing with Google OAuth 2.0.  
+
+---
+
+## 🖥️ Screenshots
+
+### Customer Interaction & Chatbot
+
+*(More screenshots can be added as needed!)*
+
+---
+
+## 🛠️ Getting Started
+
+### Prerequisites
+
+Ensure you have the following installed before proceeding:
+
+- **Python 3.7 or higher** ([Download](https://www.python.org/downloads/))
+- **MongoDB** ([Download](https://www.mongodb.com/try/download/community) or use [MongoDB Atlas](https://www.mongodb.com/atlas))
+- **Google Account** (for Gmail API access)
+
+---
+
+## 📥 Installation
+
+### 1️⃣ Clone the Repository
+
+```sh
 git clone https://github.com/kranti424/Enterprise.git
-cd BizyEasy
-3. Set Up Virtual Environment
-It's recommended to create a virtual environment to manage dependencies.
+cd Enterprise/BizyEasy
+```
+### 2️⃣ Create a Virtual Environment (Recommended)
 
-bash
-Copy
-Edit
+```sh
 python -m venv venv
-source venv/bin/activate   # On Windows, use `venv\Scripts\activate`
-4. Install Dependencies
-Install the required Python libraries using pip.
-
-bash
-Copy
-Edit
+# For macOS/Linux:
+source venv/bin/activate
+# For Windows:
+venv\Scripts\activate
+```
+### 3️⃣ Install Dependencies
+```sh
 pip install -r requirements.txt
-5. Set Up MongoDB
-Make sure MongoDB is installed and running. You can use a local instance or a cloud MongoDB service like Atlas.
+```
+### 4️⃣ Set Up MongoDB
+Ensure MongoDB is running (locally or via MongoDB Atlas)
+Create a database named enterprise_db
+Update MONGO_URI in the .env file (next step)
 
-Create a database named enterprise_db.
-Configure the connection string in the config.py file.
-6. Set Up Google OAuth 2.0
-Go to the Google Developer Console.
-Create a new project and enable the Gmail API.
-Create OAuth 2.0 credentials and download the credentials.json file.
-Save this file in the root directory of the project.
-7. Configure Environment Variables
-Create a .env file in the root directory and add the following variables:
+### 5️⃣ Configure Google OAuth 2.0
+Go to Google Cloud Console
+Create a new project
+Enable the Gmail API
+Navigate to Credentials → Create OAuth 2.0 Client IDs
+Download credentials.json and place it in the BizyEasy directory
 
-bash
-Copy
-Edit
-GMAIL_API_CREDENTIALS_PATH=path/to/credentials.json
-MONGO_URI=mongodb://localhost:27017/enterprise_db
-8. Run the Application
-Once everything is set up, run the application using the following command:
+### 6️⃣ Set Up Environment Variables
+Create a .env file in the BizyEasy directory and add the following:
 
-bash
-Copy
-Edit
+```sh
+GMAIL_API_CREDENTIALS_PATH=credentials.json
+MONGO_URI=mongodb://localhost:27017/enterprise_db  # Or MongoDB Atlas URI
+```
+### 7️⃣ Run the Application
+```sh
 python app.py
-The application should now be running and ready to handle email processing, ticket generation, and chatbot interactions!
+```
+### 📌 Usage
+Email Processing: Monitors Gmail inbox, processes emails, and generates support tickets.
+Chatbot Interaction: Customers get instant responses through the AI chatbot.
+Ticket Management: Track and resolve support tickets using Ticket IDs.
 
-Usage
-Email Processing: The system will automatically listen to incoming emails, extract relevant details, and generate support tickets.
-Chatbot: Customers can interact with the chatbot for quick answers to common questions.
-Ticket Management: Track and resolve customer queries through the unique Ticket IDs generated.
-Contributing
-If you'd like to contribute to this project, feel free to fork the repository, make changes, and create a pull request. Contributions are always welcome!
+## Author
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+👤 **Kranti Dagwar**
 
-Support
-For any issues or queries, feel free to open an issue on GitHub, and we will try to resolve it as soon as possible.
-
-This README provides a smooth and simple installation process, making it easier for others to get started with your project. Let me know if you'd like to add or change anything!
+* Github: [@kranti424](https://github.com/kranti424)

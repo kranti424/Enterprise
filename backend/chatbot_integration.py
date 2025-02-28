@@ -1,8 +1,16 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, APIRouter
 from pydantic import BaseModel
-from transformers import pipeline, Conversation
+from transformers import pipeline
+from transformers.pipelines import ConversationalPipeline
+
 
 app = FastAPI()
+router = APIRouter()
+
+
+@router.get("/chatbot")
+async def chatbot_response(query: str):
+    return {"response": f"Chatbot received: {query}"}
 
 class ChatRequest(BaseModel):
     message: str
