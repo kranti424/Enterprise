@@ -25,8 +25,6 @@ BizyEasy is a comprehensive platform designed to streamline your manual data ent
 ![Automated data entry](images/DataEntry.png)
 ### Customer Interaction & Chatbot
 ![Chat feature](images/Customer.png)
-*(More screenshots can be added as needed!)*
-
 ---
 
 ## 🛠️ Getting Started
