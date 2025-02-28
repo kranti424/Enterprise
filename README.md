@@ -83,14 +83,19 @@ MONGO_URI=mongodb://localhost:27017/enterprise_db  # Or MongoDB Atlas URI
 ### 7️⃣ Run the Application
 ```sh
 python app.py
-```
-### 📌 Usage
-Email Processing: Monitors Gmail inbox, processes emails, and generates support tickets.
-Chatbot Interaction: Customers get instant responses through the AI chatbot.
-Ticket Management: Track and resolve support tickets using Ticket IDs.
+The application should now be running and ready to handle email processing, ticket generation, and chatbot interactions!
 
-## Author
+Usage
+Email Processing: The system will automatically listen to incoming emails, extract relevant details, and generate support tickets.
+Chatbot: Customers can interact with the chatbot for quick answers to common questions.
+Ticket Management: Track and resolve customer queries through the unique Ticket IDs generated.
+Contributing
+If you'd like to contribute to this project, feel free to fork the repository, make changes, and create a pull request. Contributions are always welcome!
 
-👤 **Kranti Dagwar**
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-* Github: [@kranti424](https://github.com/kranti424)
+Support
+For any issues or queries, feel free to open an issue on GitHub, and we will try to resolve it as soon as possible.
+
+This README provides a smooth and simple installation process, making it easier for others to get started with your project. Let me know if you'd like to add or change anything!
